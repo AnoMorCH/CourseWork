@@ -1,4 +1,4 @@
-#include "news_agregator.h"
+#include "news_aggregator.h"
 
 int main() {
     NewsAggregator test1;
