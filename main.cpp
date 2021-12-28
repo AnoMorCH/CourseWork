@@ -1,7 +1,7 @@
 #include "news_aggregator.h"
 
 int main() {
-    NewsAggregator test1;
+    news_aggregator test1;
 
     std::cout << "Hello! This is the program where you can find articles you are interested in from some news outlets"
               << std::endl;
