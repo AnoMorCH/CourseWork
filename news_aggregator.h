@@ -5,7 +5,7 @@
 #include <regex>
 #include <map>
 
-class NewsAggregator {
+class news_aggregator {
     static const int newspapers_amount = 1;
     std::map<std::string, std::string> newspapers;
 
@@ -48,8 +48,8 @@ class NewsAggregator {
             while (std::getline(draft, line) && !line.find("<item>"));
 
             // Find out length of a tag, e.g. for <title> length is 7 because it has 7 characters
-            int tag_title_length = 7;
-            int tag_description_length = 13;
+            const int tag_title_length = 7;
+            const int tag_description_length = 13;
 
             std::string title;
             std::string description;
@@ -141,7 +141,7 @@ class NewsAggregator {
     }
 
 public:
-    NewsAggregator() {
+    news_aggregator() {
         newspapers["TheGuardian"] = "https://www.theguardian.com/uk/rss";
     }
 
